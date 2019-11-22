@@ -1,0 +1,41 @@
+<!-- <table class="table">
+    <thead>
+      <tr>
+        <th>College ID</th>
+        <th>College Name</th>
+        <th>City</th>
+        <th>Score</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let college of collegelist">
+        <td>{{college.id}}</td>
+        <td>{{college.name}}</td>
+        <td>{{college.city}}</td>
+        <td [class]="college.score>50?'red':'green'">{{college.score}}</td>
+      </tr> 
+     
+    </tbody>
+  </table>-->
+
+  <div class="row" style="width: 100% ; padding-bottom: 45px;" >
+    <div class="card col-md-4"   *ngFor="let college of (collegelist | filteringclgnames)" style=" padding: 28px 61px 0 68px;" >
+    
+      <div class="card-header">
+          College Details
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">College ID : {{college.id}}</li>
+          <li class="list-group-item">College Name : {{college.name}}</li>
+          <li class="list-group-item">City :{{college.city | firstupper}}</li>
+          <li class="list-group-item" [class]="college.score>50?'green':'red'" >Score : {{college.score}}</li>
+          <li class="list-group-item" >Date : {{college.Date | date:'short'}}</li>
+          <li class="list-group-item" >Data : {{college.data | dataconversion:'gigabyte'}}</li>
+        </ul>
+    
+        <button (click)="getMyStudentList()">Click </button>
+    
+      </div>
+      </div>
+
+

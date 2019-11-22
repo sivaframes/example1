@@ -1,0 +1,256 @@
+body,
+ul,
+li,
+p {
+    padding: 0;
+    margin: 0;
+    background: #edf5e1;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* header CSS starts here */
+.header {
+    background: #123c69;
+    color: #edf5e1;
+    display: flex;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.header .logoPart,
+.header .menuPart {
+    width: 50%;
+    margin: auto;
+}
+
+.header .logoPart h2 {
+    font-size: 30px;
+}
+
+.header .menuPart a {
+    text-decoration: none;
+    background: #7395ae;
+    color: #edf5e1;
+    padding: 10px 30px;
+}
+
+/* header CSS ends here */
+
+/* middleContent CSS starts here */
+.middleContent {
+    min-height: 500px;
+    padding:25px 0;
+}
+
+/* middleContent usersList CSS starts here */
+
+.middleContent .usersList .eachUser {
+    display: flex;
+    width: 75%;
+    margin: 0 auto;
+    margin-top: 10px;
+    box-sizing: border-box;
+    padding: 25px 25px 50px 25px;
+    border: 1px solid skyblue;
+    background: #7395ae;
+    color: #edf5e1;
+}
+
+/* leftPart CSS starts here */
+.middleContent .usersList .eachUser .leftPart {
+    width: 25%;
+    padding-top:25px;
+}
+
+.middleContent .usersList .eachUser .leftPart .profilePic {
+    width: fit-content;
+    height: fit-content;
+    margin: auto;
+    outline:none;
+}
+
+.middleContent .usersList .eachUser .leftPart .profilePic img {
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    
+}
+
+.middleContent .usersList .eachUser .downloadResume {
+    padding-top:25px;
+    width: fit-content;
+    margin: auto;
+}
+
+.middleContent .usersList .eachUser .downloadResume a {
+    padding: 5px 15px;
+    background: #123c69;
+    color: #edf5e1;
+    text-decoration: none;
+}
+
+/* leftPart CSS ends here */
+/* rightPart CSS starts here */
+.middleContent .usersList .eachUser .rightPart {
+    width: 75%;
+    padding: 10px 50px 0 50px;
+}
+
+/* rightPart CSS starts here */
+.title span,
+.jobRole span,
+.gender span,
+.languagesList span,
+.experience span, 
+.currentCTC span{
+    display: inline-block;
+    width: 25%;
+}
+
+.middleContent .usersList .eachUser .languagesList ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    background: transparent;
+}
+
+.middleContent .usersList .eachUser .languagesList ul li {
+    margin: 2px;
+    padding: 2px 5px;
+    background: lightblue;
+    color: #05386B;
+}
+
+.spanRight {
+    width: 70% !important;
+    display: inline-block;
+    margin: 5px 0;
+    background: transparent;
+}
+
+.updateDelete{
+    position:absolute;
+
+    top:10%;
+    right:10%;
+}
+.updateDelete i{
+    font-size:30px;
+    margin:0 10px;
+    background:lightblue;
+    border-radius:25%;
+    padding:10px;
+}
+.eachUser{
+    position:relative;
+}
+
+
+/* middleContent usersList CSS ends here */
+/* middleContent CSS ends here */
+
+/* footer CSS starts here */
+.footer {
+    background: #123c69;
+    color: #edf5e1;
+    display: flex;
+    padding: 20px 0;
+}
+
+.footer h5 {
+    margin: auto;
+}
+
+/* footer CSS end here */
+
+/* form css starts here */
+.form{
+    width:75%;
+    margin:auto;
+    padding:30px 0%;
+    display:none;
+}
+.form input{
+    margin:5px 0;
+}
+.form .uploads{
+    border-bottom:2px solid #eee;
+    padding-bottom:10px;
+    padding-left:10%;
+}
+.form .uploads h6{
+    color:red;
+}
+.form .description{
+    padding-top:10px;
+}
+.form .title{
+    text-align: center;
+    padding:20px 0 10px 0;
+    border-radius:10px;
+}
+.form .actionButtons{
+    width:fit-content;
+    margin:auto;
+}
+.form .myProfilePic{
+    border-radius:100%;
+}
+.form .uploadedpic{
+    display:none;
+}
+/* form css ends here */
+
+/* updateForm css starts here */
+.updateForm{
+    width:75%;
+    margin:auto;
+    padding:30px 0%;
+    display:none;
+}
+.updateForm input{
+    margin:5px 0;
+}
+.updateForm .uploads{
+    border-bottom:2px solid #eee;
+    padding-bottom:10px;
+    padding-left:10%;
+}
+.updateForm .uploads h6{
+    color:red;
+}
+.updateForm .description{
+    padding-top:10px;
+}
+.updateForm .title{
+    text-align: center;
+    padding:20px 0 10px 0;
+    border-radius:10px;
+}
+.updateForm .actionButtons{
+    width:fit-content;
+    margin:auto;
+}
+.updateForm .myProfilePic{
+    border-radius:100%;
+}
+.updateForm .uploadedpic{
+    display:none;
+}
+.updateForm .updateDelete{
+    position:absolute;
+
+    top:10%;
+    right:10%;
+}
+.updateForm .updateDelete i{
+    font-size:30px;
+    margin:0 10px;
+    background:lightblue;
+    border-radius:25%;
+    padding:10px;
+}
+.updateForm .eachUser{
+    position:relative;
+}
+/* updateForm css ends here */
